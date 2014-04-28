@@ -1,0 +1,19 @@
+﻿<metadata>
+
+  <!---
+  The warnings
+    'For type <...>, base interface base interface Java.Interop.IJavaObjectEx does not exist. (BG8C00)'
+  can apparently be disregarded, see https://bugzilla.xamarin.com/show_bug.cgi?id=17998
+  -->
+
+  <attr path="/api/package[@name='com.astuetz']/class[@name='PagerSlidingTabStrip']/method[@name='onRestoreInstanceState' and count(parameter)=1 and parameter[1][@type='android.os.Parcelable']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='com.astuetz']/class[@name='PagerSlidingTabStrip']/method[@name='onSaveInstanceState' and count(parameter)=0]" name="visibility">protected</attr>
+
+  <!--
+  This is supposed to fix
+    'Warning CS0108: `Com.Astuetz.PagerSlidingTabStrip.SavedState.Creator' hides inherited member `Android.Views.View.BaseSavedState.Creator'. Use the new keyword if hiding was intended (CS0108) (PagerSlidingTabStripBindings)'
+  but it doesn't
+  -->
+  <attr path="/api/package[@name='com.astuetz']/class[@name='PagerSlidingTabStrip.SavedState']/field[@name='CREATOR']" name="visibility">protected</attr>
+
+</metadata>
