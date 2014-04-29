@@ -6,7 +6,7 @@ Usage
 -----
 1. Add this project to your solution
 2. Edit your project's references to include this project  
-3. You'll probably have to add the 'Android Support Library v4' component to your project even though it's included in this one
+3. Add the 'Android Support Library v4' component to your project (yes, even though it's included in this one)
 4. Add a `com.astuetz.PagerSlidingTabStrip` XML element to your layout
 5. Add a `using Com.Astuetz` directive in your code
 
