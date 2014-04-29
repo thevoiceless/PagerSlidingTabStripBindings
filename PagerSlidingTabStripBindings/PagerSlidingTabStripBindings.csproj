@@ -60,13 +60,12 @@
     <LibraryProjectZip Include="Jars\pagerslidingtabstrip-1.0.1.aar" />
   </ItemGroup>
   <ItemGroup>
+    <ReferenceJar Include="Jars\support-v4-r7.jar" />
+  </ItemGroup>
+  <ItemGroup>
     <XamarinComponentReference Include="xamandroidsupportv4-18">
-      <InstallationInProgress>True</InstallationInProgress>
       <Version>19.1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedReferenceJar Include="Jars\support-v4-r7.jar" />
   </ItemGroup>
 </Project>
